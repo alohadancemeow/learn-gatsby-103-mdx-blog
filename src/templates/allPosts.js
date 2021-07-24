@@ -64,10 +64,10 @@ export const pageQuery = graphql`
             edges {
                 node {
                     frontmatter {
-                    date
-                    excerpt
-                    slug
-                    title
+                        date(formatString: "MMMM DD, YYYY")
+                        excerpt
+                        slug
+                        title
                     }
                 }
             }
