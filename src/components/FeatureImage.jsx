@@ -3,7 +3,7 @@ import Img from 'gatsby-image'
 import { useStaticQuery, graphql } from 'gatsby'
 import { FeatureImageWrapper } from '../elements'
 
-export const FeatureImage = () => {
+export const FeatureImage = ({ fixed }) => {
 
     // # Get image
     const data = useStaticQuery(graphql`
@@ -19,7 +19,7 @@ export const FeatureImage = () => {
     return (
         <FeatureImageWrapper>
             <Img
-                fixed={data.imageSharp.fixed}
+                fixed={fixed ? fixed : data.imageSharp.fixed}
                 style={{
                     position: 'absolute',
                     left: 0,
