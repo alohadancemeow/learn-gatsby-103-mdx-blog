@@ -6,7 +6,8 @@ import {
     Content,
     ContentCard,
     FeatureImage,
-    Pagination
+    Pagination,
+    Seo
 } from '../components'
 
 const allPosts = ({ pageContext, data }) => {
@@ -22,6 +23,7 @@ const allPosts = ({ pageContext, data }) => {
 
     return (
         <Container>
+            <Seo />
             <FeatureImage />
             <Content>
                 <H1 textAlign='center' margin='0 0 1rem 0'>

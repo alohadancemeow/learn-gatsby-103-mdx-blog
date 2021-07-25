@@ -6,6 +6,14 @@
 
 module.exports = {
   /* Your site config here */
+  siteMetadata: {
+    title: "My MDX Blog",
+    description: "A simple blog built with gatsby and mdx",
+    url: "",
+    image: "/2.jpg",
+    twitterUsername: "@3rd_rabbitGo",
+    author: "3rd rabbit"
+  },
   plugins: [
     {
       resolve: `gatsby-source-filesystem`,
